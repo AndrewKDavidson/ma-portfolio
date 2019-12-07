@@ -26,18 +26,13 @@ export default function Header() {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Andrew Davidson Portfolio
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">About</Button>
+          <Button color="inherit">Projects</Button>
+          <Button color="inherit">Resume</Button>
+          <Button color="inherit">Contact Me</Button>
         </Toolbar>
       </AppBar>
     </div>
