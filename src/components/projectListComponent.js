@@ -10,10 +10,6 @@ class ProjectList extends Component {
     searchString: ""
   };
 
-  constructor() {
-    super();
-  }
-
   getProjects = () => {
     console.log("Got all them projects");
   };

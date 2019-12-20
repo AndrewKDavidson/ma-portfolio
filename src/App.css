@@ -26,12 +26,12 @@ body {
   padding-left: 110px;
 }
 /* Header styles */
-.MuiPaper-root {
-  z-index: 0;
+.MuiAppBar-root {
+  z-index: 1;
 }
 
 /* Drawer styles */
 .MuiDrawer-paper {
-  z-index: 1;
-  margin-top: 64px;
+  z-index: 0 !important;
+  padding-top: 64px;
 }

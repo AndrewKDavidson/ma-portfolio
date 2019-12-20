@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Drawer from "@material-ui/core/Drawer";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import IconButton from "@material-ui/core/IconButton";
 
 const styles = {
   root: {
