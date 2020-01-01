@@ -20,18 +20,3 @@
 .App-link {
   color: #09d3ac;
 }
-
-body {
-  padding-top: 64px;
-  padding-left: 110px;
-}
-/* Header styles */
-.MuiAppBar-root {
-  z-index: 1;
-}
-
-/* Drawer styles */
-.MuiDrawer-paper {
-  z-index: 0 !important;
-  padding-top: 64px;
-}

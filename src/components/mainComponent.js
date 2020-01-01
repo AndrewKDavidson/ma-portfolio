@@ -3,35 +3,18 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import { MuiThemeProvider } from "@material-ui/core";
 import Header from "./headerComponent";
 import AppDrawer from "./drawerComponent";
+import Hidden from "@material-ui/core/Hidden";
 import ProjectList from "./projectListComponent";
-import { yellow, pink, red, purple } from "@material-ui/core/colors";
-
-const themeObject = {
-  palette: {
-    type: "light",
-    primary: {
-      light: "#000000",
-      main: "#ff4400",
-      dark: "#222222"
-      // contrastText: will be calculated to contrast with palette.primary.main
-    },
-    secondary: {
-      light: "#0066ff",
-      main: "#0044ff",
-      dark: "#ffffff",
-      contrastText: "#ffcc00"
-    }
-    // error: will use the default color
-  }
-};
+import { globalTheme } from "../styles/globalTheme.js";
 
 const useDarkMode = () => {
-  const [theme, setTheme] = useState(themeObject);
+  const [theme, setTheme] = useState(globalTheme);
 
   const {
     palette: { type }
   } = theme;
   const toggleDarkMode = () => {
+    document.body.classList.toggle('dark');
     const updatedTheme = {
       ...theme,
       palette: {
@@ -54,7 +37,9 @@ const Main = () => {
     <>
       <MuiThemeProvider theme={muiTheme}>
         <Header onToggleDark={toggleDarkMode} />
-        <AppDrawer />
+        <Hidden xsDown>
+          <AppDrawer />
+        </Hidden>
         <ProjectList />
       </MuiThemeProvider>
     </>

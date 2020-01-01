@@ -1,10 +1,51 @@
+@import "./styles/gooey-menu.css";
+@import "./styles/dark-toggle-menu.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+
+.noSelect {
+  -webkit-touch-callout: transparent;
+  -webkit-user-select: transparent;
+  -khtml-user-select: transparent;
+  -moz-user-select: transparent;
+  -ms-user-select: transparent;
+  user-select: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Header styles */
+.MuiAppBar-root {
+  z-index: 1;
+}
+
+/* Drawer styles */
+.MuiDrawer-paper {
+  z-index: 0 !important;
+  padding-top: 64px;
+}
+
+@media only screen and (max-width: 599px) {
+ body {
+   padding-left: 0px!important;
+   padding-top:0px!important;
+ }
+}
+
 body {
   margin: 0;
+  padding-top: 64px;
+  padding-left: 110px;
+  transition: padding 500ms ease;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 200ms ease;
+}
+
+body.dark {
+  background-color: black;
 }
 
 code {
