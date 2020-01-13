@@ -1,0 +1,11 @@
+.slick-slide img {
+    margin: auto;
+}
+
+.slick-arrow:before {
+    content: '';
+    font-size: 0;
+}
+.slick-slide div div {
+    outline: none!important;
+}

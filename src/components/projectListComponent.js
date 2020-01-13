@@ -24,7 +24,6 @@ class ProjectList extends Component {
   };
 
   render() {
-    console.log(this.state.projects);
     return (
       <div>
         {this.state.projects ? (
@@ -38,7 +37,7 @@ class ProjectList extends Component {
             />
             <Grid container spacing={2} style={{ padding: 24 }}>
               {this.state.projects.map(currentProject => (
-                <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
+                <Grid item xs={12}>
                   <Project key={currentProject.id} project={currentProject} />
                 </Grid>
               ))}
