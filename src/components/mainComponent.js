@@ -41,10 +41,10 @@ const Main = () => {
       <MuiThemeProvider theme={muiTheme}>
       <CssBaseline />
         <Hidden xsDown>
-          <AppDrawer />
+          <AppDrawer onToggleDark={toggleDarkMode} />
         </Hidden>
         <Hidden smUp>
-          <GooeyMenu onToggleDark={toggleDarkMode}/>
+          <GooeyMenu onToggleDark={toggleDarkMode} />
         </Hidden>
         <ProjectList />
       </MuiThemeProvider>

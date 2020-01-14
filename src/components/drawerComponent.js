@@ -1,6 +1,7 @@
 import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import { withStyles } from '@material-ui/core/styles';
+import DarkModeSwitch from './darkModeSwitchComponent';
 
 const styles = theme => ({
   paper: {
@@ -22,13 +23,13 @@ const styles = theme => ({
   }
 });
 
-function AppDrawer(props) {
-const { classes } = props;
+function AppDrawer({onToggleDark, classes}) {
 
   return (
     <Drawer classes={{paper: classes.paper}} variant="permanent" anchor="left" open>
       <div className={ classes.drawerHeader }></div>
       <div className={ classes.drawerInner }>
+        <DarkModeSwitch onToggleDark={onToggleDark} />
         <p>drawer content</p>
       </div>
     </Drawer>
