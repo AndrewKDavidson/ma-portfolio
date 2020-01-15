@@ -21,7 +21,7 @@ const Project = props => {
           <CardActions>
             <Button
               size="small"
-              color="secondary"
+              color="primary"
               href={props.project.url}
               target="_blank"
             >

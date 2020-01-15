@@ -21,9 +21,9 @@ const GooeyMenu = ({onToggleDark, classes}) => {
                 <span className="hamburger hamburger-3"></span>
             </label>
             
-            <a href="#" className={"menu-item " +classes.menuButton} > <i className="fa fa-home"></i> </a>
-            <a href="#" className={"menu-item " +classes.menuButton}> <i className="fa fa-phone"></i> </a>
-            <a href="#" className={"menu-item " +classes.menuButton}> <i className="fa fa-project-diagram"></i> </a>
+            <a href="#" className={"menu-item " + classes.menuButton}> <i className="fa fa-home"></i> </a>
+            <a href="#" className={"menu-item " + classes.menuButton}> <i className="fa fa-phone"></i> </a>
+            <a href="#" className={"menu-item " + classes.menuButton}> <i className="fa fa-project-diagram"></i> </a>
             <DarkModeSwitch onToggleDark={onToggleDark} />
         </nav>
     )

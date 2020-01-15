@@ -27,7 +27,6 @@ function PrevArrow(props) {
 }
 
 const Carousel = props => {
-    console.log(props);
     const settings = {
         autoplay: false,
         dots: true,

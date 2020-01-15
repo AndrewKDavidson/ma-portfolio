@@ -22,11 +22,21 @@ export const globalTheme = {
         dark: "#5DADA8"
       },
       background: {
-        default: '#E2F1F1'
+        default: '#F8FFFF',
+        light: '#F8FFFF',
+        dark: '#E2F1F1'
       },
       drawer: {
-        light: "#2E3045",
-        dark: "#E2F1F1"
+        light: "#5DADA8",
+        dark: "#2E3045"
+      },
+      heading: {
+        light: "#E2F1F1",
+        dark: "#417876"
+      },
+      scrollBar: {
+        light: "#5DADA8",
+        dark: "#5DADA8"
       }
       // error: will use the default color
     }
