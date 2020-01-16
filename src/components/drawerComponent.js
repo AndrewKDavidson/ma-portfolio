@@ -2,7 +2,6 @@ import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import { withStyles } from '@material-ui/core/styles';
 import DarkModeSwitch from './darkModeSwitchComponent';
-import ScrollComponent from './scrollIndicatorComponent';
 
 const styles = theme => ({
   paper: {
@@ -36,7 +35,6 @@ function AppDrawer({onToggleDark, classes}) {
           <p>drawer content</p>
         </div>
       </Drawer>
-      <ScrollComponent />
     </>
   );
 }

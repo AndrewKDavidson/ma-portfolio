@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
@@ -27,20 +28,22 @@ const styles = theme => ({
 function Heading({classes}) {
     return(
         <Box className={classes.boxBackground}>
-            <div className={classes.signature}>
+            <Container>
+                <div className={classes.signature}>
 
-            </div>
-            <Typography variant="h1" component="h2">
-            <Box fontWeight="fontWeightBold" mt={-13}>
-                MY PORTFOLIO
-            </Box>
-            </Typography>
-            <Typography component="p" gutterBottom={true}>
-                Nile river was once a large river. I wonder how big it will be in 100 years. I bet it won't ever be big enough to fight me.
-            </Typography>
-            <Typography component="p" gutterBottom={true}>
-                Companies I have worked for            
-            </Typography>
+                </div>
+                <Typography variant="h1" component="h2">
+                <Box fontWeight="fontWeightBold" mt={-13}>
+                    MY PORTFOLIO
+                </Box>
+                </Typography>
+                <Typography component="p" gutterBottom={true}>
+                    Nile river was once a large river. I wonder how big it will be in 100 years. I bet it won't ever be big enough to fight me.
+                </Typography>
+                <Typography component="p" gutterBottom={true}>
+                    Companies I have worked for            
+                </Typography>
+            </Container>
         </Box>
     )
 }

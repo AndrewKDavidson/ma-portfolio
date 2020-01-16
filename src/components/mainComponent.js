@@ -8,6 +8,7 @@ import Heading from './headingComponent';
 import ProjectList from "./projectListComponent";
 import { globalTheme } from "../styles/globalTheme.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import ScrollComponent from './scrollIndicatorComponent';
 
 const useDarkMode = () => {
   const [theme, setTheme] = useState(globalTheme);
@@ -54,6 +55,7 @@ const Main = () => {
         <Hidden xsDown>
           <AppDrawer onToggleDark={toggleDarkMode} />
         </Hidden>
+        <ScrollComponent />
         {/* showing mobile menu */}
         <Hidden smUp>
           <GooeyMenu onToggleDark={toggleDarkMode} />
