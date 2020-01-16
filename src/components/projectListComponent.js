@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Grid from "@material-ui/core/grid";
+import Grid from "@material-ui/core/Grid";
 import { PROJECTS } from "../shared/projects";
 import Project from "../components/projectComponent";
 import Typography from '@material-ui/core/Typography';
