@@ -1,32 +1,50 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/carousel-styles.css";
 
+const useStyles = makeStyles(theme => ({
+    arrows: {
+        display: "block", 
+        backgroundColor: theme.palette.buttonBackground[theme.palette.type],
+        color: theme.palette.buttonText[theme.palette.type],
+        borderRadius: '100%',
+        height: '119px',
+        width: '119px',
+    }
+}))
+
 function NextArrow(props) {
-    const { className, onClick } = props;
+    const { className, style, onClick } = props;
     return (
+        <>
+        {console.log(props)}
         <div
-        className={className}
-        style={{ display: "block", background: "red", height: '100px', backgroundImage: "url(/images/dark-switch-icon.svg)", backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
+        className={`${className} + ${props.classes}`}
+        style={{...style}}
         onClick={onClick}
         />
+        </>
     );
 }
   
 function PrevArrow(props) {
-    const { className, onClick } = props;
+    const { className, style, onClick } = props;
     return (
         <div
-        className={className}
-        style={{ display: "block", background: "green", height: '100px', backgroundImage: "url(/images/dark-switch-icon.svg)", backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
+        className={`${className} + ${props.classes}`}
+        style={{...style}}
         onClick={onClick}
         />
     );
 }
 
 const Carousel = props => {
+    //grabbing the styles from above
+    const classes = useStyles();
+
     const settings = {
         autoplay: false,
         dots: true,
@@ -35,8 +53,8 @@ const Carousel = props => {
         slidesToShow: 1,
         slidesToScroll: 1,
         focusOnSelect: false,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
+        nextArrow: <NextArrow classes={classes.arrows} />,
+        prevArrow: <PrevArrow classes={classes.arrows} />,
     };
     return (
     <div>

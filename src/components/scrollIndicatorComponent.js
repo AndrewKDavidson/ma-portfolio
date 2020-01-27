@@ -13,12 +13,12 @@ const styles = theme => ({
       progressContainer: {
         width: '8px',
         height: '100%',
-        backgroundColor: theme.palette.scrollBar.light
+        backgroundColor: theme.palette.drawer[theme.palette.type]
       },
       /* The progress bar (scroll indicator) */
       progressBar: {
         height: '0%',
-        backgroundColor: theme.palette.heading.dark,
+        backgroundColor: theme.palette.scrollBar[theme.palette.type],
         width: '8px'
       }
 })

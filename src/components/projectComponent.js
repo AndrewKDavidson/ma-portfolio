@@ -22,6 +22,15 @@ const useStyles = makeStyles(theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
+  card: {
+    backgroundColor: theme.palette.heading[theme.palette.type],
+    color: theme.palette.primary[theme.palette.type],
+  },
+  processButton: {
+    backgroundColor: theme.palette.buttonBackground[theme.palette.type],
+    color: theme.palette.buttonText[theme.palette.type],
+    margin: '12px 0'
+  }
 }));
 
 
@@ -43,22 +52,26 @@ const Project = props => {
     return (
       <div>
         {props.project ? (
-          <Card>
+          <Card className={`slide-top ${classes.card}` }>
             <CardContent>
-              <Typography gutterBottom variant="headline" component="h2">
+              <Typography gutterBottom variant="h3" component="h2" display='inline' style={{marginRight: '20px'}}>
                 {props.project.title}
               </Typography>
-              <Typography component="p">{props.project.description}</Typography>
+              <Typography component="p" display='inline'>
+                {props.project.description}
+              </Typography>
               <Carousel props={props} />
             </CardContent>
-            <CardActions>
+            <CardActions style={{justifyContent:'center'}}>
               <Button
                 size="small"
-                color="primary"
+                className={classes.processButton}
                 target="_blank"
                 onClick={() => handleOpen()}
+                variant="contained"
+                size="medium"
               >
-                Go To Project
+                Process
               </Button>
             </CardActions>
           </Card>

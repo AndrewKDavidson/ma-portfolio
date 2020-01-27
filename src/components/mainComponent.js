@@ -27,7 +27,7 @@ const useDarkMode = () => {
         type: type === "light" ? "dark" : "light",
         background: {
           // modify default body background colors here and default in globalTheme
-          default: type === 'light' ? '#E2F1F1' : '#F8FFFF'
+          default: type === 'light' ? '#1A2429' : '##F8FFFF'
         },
       }
     };

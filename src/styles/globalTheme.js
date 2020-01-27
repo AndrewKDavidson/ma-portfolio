@@ -1,11 +1,16 @@
 export const globalTheme = {
+    typography: {
+      button: {
+        textTransform: "none"
+      }
+    },
     palette: {
       type: "light",
       //backgrounds
       primary: {
-        light: "#E2F1F1",
+        light: "#1A2429",
         main: "#ff4400",
-        dark: "#2E3045"
+        dark: "#FFFFFF"
         // contrastText: will be calculated to contrast with palette.primary.main
       },
       //text/accents
@@ -24,19 +29,35 @@ export const globalTheme = {
       background: {
         default: '#F8FFFF',
         light: '#F8FFFF',
-        dark: '#E2F1F1'
+        dark: '#1A2429'
+      },
+      buttonBackground:{
+        light: "#5DADA8",
+        dark: "#5DADA8"
+      },
+      buttonText:{
+        light: "#FFFFFF",
+        dark: "#1A2429"
       },
       drawer: {
-        light: "#5DADA8",
-        dark: "#2E3045"
+        light: "#F8FFFF",
+        dark: "#1A2429"
+      },
+      mainBorder: {
+        light: "#1A2429",
+        dark: "#16DFD3"
       },
       heading: {
         light: "#E2F1F1",
-        dark: "#417876"
+        dark: "#26343B"
+      },
+      headingContent: {
+        light: "#2E3045",
+        dark: "#E2F1F1"
       },
       scrollBar: {
-        light: "#5DADA8",
-        dark: "#5DADA8"
+        light: "#2E3045",
+        dark: "#16DFD3"
       }
       // error: will use the default color
     }

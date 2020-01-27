@@ -5,6 +5,8 @@ import DarkModeSwitch from './darkModeSwitchComponent';
 
 const styles = theme => ({
   paper: {
+    borderColor: theme.palette.mainBorder[theme.palette.type],
+    borderRight: '1px solid',
     backgroundColor: theme.palette.drawer[theme.palette.type],
     color: theme.palette.primary[theme.palette.type],
     marginLeft: '8px'
@@ -30,7 +32,7 @@ function AppDrawer({onToggleDark, classes}) {
     <>
       <Drawer classes={{paper: classes.paper}} variant="permanent" anchor="left" open>
         <div className={ classes.drawerHeader }></div>
-        <div className={ classes.drawerInner }>
+        <div className={ classes.drawerInner } >
           <DarkModeSwitch onToggleDark={onToggleDark} />
           <p>drawer content</p>
         </div>
