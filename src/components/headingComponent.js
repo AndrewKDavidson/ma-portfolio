@@ -16,19 +16,9 @@ const styles = theme => ({
         overflow: 'hidden',
         paddingTop: '30px'
     },
-    signature: {
-        height: '250px',
-        width: '300px',
+    signatureContainer: {
+        width: '200px',
         margin: '0 auto',
-        "& svg": {
-            fill: theme.palette.headingContent[theme.palette.type],
-            width: '100%',
-            height: '100%',
-            "& path": {
-                fill: theme.palette.headingContent[theme.palette.type],
-                transition: 'fill 1s ease',
-            }
-        }
     },
     companyContainer: {
         padding: '20px 0px',
@@ -52,8 +42,8 @@ function Heading({classes}) {
     return(
         <Box className={classes.boxBackground} border borderBottom={1}>
             <Container>
-                <div className={classes.signature}>
-                    <Signature classes={classes} />
+                <div className={classes.signatureContainer}>
+                    <Signature />
                 </div>
                 <Typography variant="h1" component="h2">
                 <Box fontWeight="fontWeightBold" mt={-12}>
@@ -63,11 +53,11 @@ function Heading({classes}) {
                 <Typography component="p" gutterBottom={true}>
                     Nile river was once a large river. I wonder how big it will be in 100 years. I bet it won't ever be big enough to fight me.
                 </Typography>
-                <Typography component="p" gutterBottom={true}>
                 <Box mt={8}>
-                    Companies I have worked for
-                </Box>          
-                </Typography>
+                    <Typography component="p" gutterBottom={true}>
+                        Companies I have worked for        
+                    </Typography>
+                </Box>  
                 <Grid container justify='center' spacing={8} className={classes.companyContainer}>
                     <Grid item xs mb={4}>
                         <Companies classes={classes} />

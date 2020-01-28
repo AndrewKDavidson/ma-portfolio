@@ -19,7 +19,6 @@
 /* Drawer styles */
 .MuiDrawer-paper {
   z-index: 0 !important;
-  padding-top: 64px;
 }
 
 @media only screen and (max-width: 599px) {
@@ -31,7 +30,7 @@
 
 body {
   margin: 0;
-  padding-left: 96px;
+  padding-left: 80px;
   transition: padding 500ms ease;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

@@ -9,6 +9,7 @@ import ProjectList from "./projectListComponent";
 import { globalTheme } from "../styles/globalTheme.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ScrollComponent from './scrollIndicatorComponent';
+import RightMenu from './rightMenuComponent';
 
 const useDarkMode = () => {
   const [theme, setTheme] = useState(globalTheme);
@@ -60,6 +61,7 @@ const Main = () => {
         <Hidden smUp>
           <GooeyMenu onToggleDark={toggleDarkMode} />
         </Hidden>
+        <RightMenu onToggleDark={toggleDarkMode} />
         <Heading />
         <ProjectList />
       </MuiThemeProvider>

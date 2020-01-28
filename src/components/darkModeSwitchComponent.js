@@ -12,11 +12,11 @@ const DarkSwitch = withStyles(theme => ({
   },
   switchBase: {
     padding: 0,
-    color: theme.palette.secondary[theme.palette.type],
+    color: theme.palette.buttonBackground[theme.palette.type],
     backgroundPosition: 'center',
     '&$checked': {
       transform: 'translateY(32px)',
-      color: theme.palette.secondary[theme.palette.type],
+      color: theme.palette.buttonBackground[theme.palette.type],
       '&$checked $thumb': {
         backgroundImage: "url(/images/dark-switch-icon.svg)",
       },

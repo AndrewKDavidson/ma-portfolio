@@ -1,6 +1,5 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import DarkModeSwitch from './darkModeSwitchComponent';
 import "../styles/gooey-menu.css";
 
 const styles = theme => ({
@@ -11,7 +10,7 @@ const styles = theme => ({
     }
   });
 
-const GooeyMenu = ({onToggleDark, classes}) => {
+const GooeyMenu = ({classes}) => {
     return(
         <nav className="menu noSelect">
             <input type="checkbox" href="#" className="menu-open" name="menu-open" id="menu-open"/>
@@ -24,7 +23,6 @@ const GooeyMenu = ({onToggleDark, classes}) => {
             <a href="#" className={"menu-item " + classes.menuButton}> <i className="fa fa-home"></i> </a>
             <a href="#" className={"menu-item " + classes.menuButton}> <i className="fa fa-phone"></i> </a>
             <a href="#" className={"menu-item " + classes.menuButton}> <i className="fa fa-project-diagram"></i> </a>
-            <DarkModeSwitch onToggleDark={onToggleDark} />
         </nav>
     )
 }

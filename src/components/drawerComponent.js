@@ -1,7 +1,9 @@
 import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import { withStyles } from '@material-ui/core/styles';
-import DarkModeSwitch from './darkModeSwitchComponent';
+import Signature from './signatureComponent.js'
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   paper: {
@@ -9,7 +11,7 @@ const styles = theme => ({
     borderRight: '1px solid',
     backgroundColor: theme.palette.drawer[theme.palette.type],
     color: theme.palette.primary[theme.palette.type],
-    marginLeft: '8px'
+    width: '80px'
   },
   flex: {
     flex: 1
@@ -18,23 +20,57 @@ const styles = theme => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-end",
-    padding: "0 8px",
-
   },
   drawerInner: {
-
+    paddingTop: '16px',
+  },
+  signatureContainer: {
+    width:'100%',
+    padding: '25px 0',
+    borderColor: theme.palette.mainBorder[theme.palette.type],
+    borderBottom: '1px solid',
+    zIndex:'10',
+    "& svg" : {
+      paddingLeft: '8px'
+    }
+  },
+  linkText: {
+    color: theme.palette.primary[theme.palette.type],
+    writingMode: 'vertical-lr',
+    margin: '0 auto',
+    transform: 'rotate(180deg)',
+    justifyContent: 'space-between',
+    fontSize: '18px',
+    "& a": {
+      margin: '16px 0'
+    }
   }
 });
 
-function AppDrawer({onToggleDark, classes}) {
+function AppDrawer({classes}) {
+
+  const preventDefault = event => event.preventDefault();
 
   return (
     <>
       <Drawer classes={{paper: classes.paper}} variant="permanent" anchor="left" open>
-        <div className={ classes.drawerHeader }></div>
+        <div className={ classes.drawerHeader }>
+          <div className={classes.signatureContainer}>
+            <Signature />
+          </div>
+        </div>
         <div className={ classes.drawerInner } >
-          <DarkModeSwitch onToggleDark={onToggleDark} />
-          <p>drawer content</p>
+          <Typography className={classes.linkText}>
+            <Link href="#" onClick={preventDefault} color='inherit' className="">
+                Contact Info
+            </Link>
+            <Link href="#" onClick={preventDefault} color='inherit'>
+              Resume
+            </Link>
+            <Link href="#" onClick={preventDefault} color='inherit'>
+              My Work
+            </Link>
+          </Typography>
         </div>
       </Drawer>
     </>

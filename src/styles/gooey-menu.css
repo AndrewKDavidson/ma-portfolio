@@ -9,7 +9,7 @@
     border-radius: 100%;
     width: 70px;
     height: 70px;
-    left: 20px;
+    left: 25px;
     position: absolute;
     text-align: center;
     line-height: 70px;
@@ -74,7 +74,7 @@
   
   .menu {
     position: fixed;
-    bottom: 17px;
+    bottom: 85px;
     box-sizing: border-box;
     font-size: 20px;
     text-align: left;
