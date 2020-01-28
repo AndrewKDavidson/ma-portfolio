@@ -15,10 +15,10 @@ const styles = theme => ({
         position: 'fixed',
         right: '25px',
         bottom: '15px',
-        zIndex: '100',
-        width: '74px',
-        height: '74px',
-        borderRadius: '10%',
+        // zIndex: '100',
+        // width: '74px',
+        // height: '74px',
+        // borderRadius: '50%',
         backgroundColor: theme.palette.buttonBackground[theme.palette.type],
         color: theme.palette.buttonText[theme.palette.type],
         "& i": {
@@ -40,7 +40,7 @@ function RightMenu({onToggleDark, classes}) {
                 <DarkModeSwitch onToggleDark={onToggleDark} />  
             </Box>
             <Link href="#" onClick={preventDefault} color='inherit' className="">
-                <Box className={classes.contactContainer}>
+                <Box className={`${classes.contactContainer} menu-open-button`}>
                     <i className="fas fa-phone-alt"></i>
                 </Box>
             </Link>

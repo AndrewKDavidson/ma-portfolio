@@ -23,6 +23,11 @@ const styles = theme => ({
   },
   drawerInner: {
     paddingTop: '16px',
+    display: 'flex',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
+    height: '100%'
+
   },
   signatureContainer: {
     width:'100%',
@@ -39,11 +44,18 @@ const styles = theme => ({
     writingMode: 'vertical-lr',
     margin: '0 auto',
     transform: 'rotate(180deg)',
-    justifyContent: 'space-between',
     fontSize: '18px',
     "& a": {
       margin: '16px 0'
     }
+  },
+  city: {
+    margin: 'auto auto 0 auto',
+    padding: '26px 0',
+    borderColor: theme.palette.mainBorder[theme.palette.type],
+    borderBottom: '1px solid',
+    writingMode: 'vertical-lr',
+    transform: 'rotate(180deg)',
   }
 });
 
@@ -70,6 +82,9 @@ function AppDrawer({classes}) {
             <Link href="#" onClick={preventDefault} color='inherit'>
               My Work
             </Link>
+          </Typography>
+          <Typography className={classes.city}>
+            Seattle, WA
           </Typography>
         </div>
       </Drawer>

@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         },
         "& i": {
             position: 'absolute',
-            fontSize: '66px',
+            fontSize: '50px',
             left: '55%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
@@ -44,8 +44,8 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.buttonBackground[theme.palette.type],
         color: theme.palette.buttonText[theme.palette.type],
         borderRadius: '100%',
-        height: '119px',
-        width: '119px',
+        height: '100px',
+        width: '100px',
         zIndex: '10',
         '&:hover': {
             backgroundColor: theme.palette.buttonBackground[theme.palette.type],
@@ -99,7 +99,6 @@ const Carousel = props => {
     const settings = {
         autoplay: false,
         dots: true,
-        fade: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,

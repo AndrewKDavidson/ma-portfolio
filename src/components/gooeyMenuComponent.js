@@ -4,9 +4,11 @@ import "../styles/gooey-menu.css";
 
 const styles = theme => ({
     menuButton: {
-      backgroundColor: theme.palette.tertiary[theme.palette.type],
-      borderColor: 'transparent',
-      color: theme.palette.primary.light 
+        backgroundColor: theme.palette.buttonBackground[theme.palette.type],
+        color: theme.palette.buttonText[theme.palette.type],
+        borderColor: 'transparent',
+        left: '25px',
+        position: 'absolute',
     }
   });
 
