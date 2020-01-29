@@ -6,6 +6,8 @@ import AppDrawer from "./drawerComponent";
 import Hidden from "@material-ui/core/Hidden";
 import Heading from './headingComponent';
 import ProjectList from "./projectListComponent";
+import SoftwareList from "./softwareComponent";
+import Contact from "./contactComponent";
 import { globalTheme } from "../styles/globalTheme.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ScrollComponent from './scrollIndicatorComponent';
@@ -64,6 +66,8 @@ const Main = () => {
         <RightMenu onToggleDark={toggleDarkMode} />
         <Heading />
         <ProjectList />
+        <SoftwareList />
+        <Contact />
       </MuiThemeProvider>
     </>
   );

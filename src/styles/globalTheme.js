@@ -5,7 +5,7 @@ export const globalTheme = {
       }
     },
     palette: {
-      type: "light",
+      type: "dark",
       //backgrounds
       primary: {
         light: "#1A2429",
@@ -27,7 +27,7 @@ export const globalTheme = {
         dark: "#5DADA8"
       },
       background: {
-        default: '#F8FFFF',
+        default: '#1A2429',
         light: '#F8FFFF',
         dark: '#1A2429'
       },
@@ -38,6 +38,10 @@ export const globalTheme = {
       buttonText:{
         light: "#FFFFFF",
         dark: "#1A2429"
+      },
+      carouselArrow:{
+        light: "#1A2429",
+        dark: "#FFFFFF"
       },
       drawer: {
         light: "#F8FFFF",

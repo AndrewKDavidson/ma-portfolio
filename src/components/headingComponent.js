@@ -40,15 +40,15 @@ const styles = theme => ({
 
 function Heading({classes}) {
     return(
-        <Box className={classes.boxBackground} border borderBottom={1}>
+        <Box className={classes.boxBackground} borderBottom={1}>
             <Container>
                 <div className={classes.signatureContainer}>
                     <Signature />
                 </div>
                 <Typography variant="h1" component="h2">
-                <Box fontWeight="fontWeightBold" mt={-12}>
-                    MY PORTFOLIO
-                </Box>
+                    <Box fontWeight="fontWeightBold" mt={-12}>
+                        MY PORTFOLIO
+                    </Box>
                 </Typography>
                 <Typography component="p" gutterBottom={true}>
                     Nile river was once a large river. I wonder how big it will be in 100 years. I bet it won't ever be big enough to fight me.

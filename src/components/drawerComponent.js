@@ -73,8 +73,8 @@ function AppDrawer({classes}) {
         </div>
         <div className={ classes.drawerInner } >
           <Typography className={classes.linkText}>
-            <Link href="#" onClick={preventDefault} color='inherit' className="">
-                Contact Info
+            <Link href="#" onClick={preventDefault} color='inherit'>
+              Contact Info
             </Link>
             <Link href="#" onClick={preventDefault} color='inherit'>
               Resume

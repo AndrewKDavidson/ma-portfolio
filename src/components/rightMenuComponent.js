@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import DarkModeSwitch from './darkModeSwitchComponent';
 import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
+import Button from "@material-ui/core/Button";
 
 const styles = theme => ({
     darkModeContainer: {
@@ -12,15 +12,16 @@ const styles = theme => ({
         zIndex: '100'
     },
     contactContainer: {
+        transition: 'transform ease-out 200ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+        borderRadius: '100%',
         position: 'fixed',
         right: '25px',
-        bottom: '15px',
-        // zIndex: '100',
-        // width: '74px',
-        // height: '74px',
-        // borderRadius: '50%',
+        bottom: '24px',
         backgroundColor: theme.palette.buttonBackground[theme.palette.type],
         color: theme.palette.buttonText[theme.palette.type],
+        "&:hover": {
+            backgroundColor: theme.palette.buttonBackground[theme.palette.type],
+        },
         "& i": {
             position: 'absolute',
             fontSize: '30px',
@@ -39,11 +40,16 @@ function RightMenu({onToggleDark, classes}) {
             <Box className={classes.darkModeContainer}>
                 <DarkModeSwitch onToggleDark={onToggleDark} />  
             </Box>
-            <Link href="#" onClick={preventDefault} color='inherit' className="">
-                <Box className={`${classes.contactContainer} menu-open-button`}>
-                    <i className="fas fa-phone-alt"></i>
-                </Box>
-            </Link>
+            <Button
+                className={`${classes.contactContainer} menu-open-button`}
+                onClick={preventDefault}
+                target="_blank"
+                variant="contained"
+                size="medium"
+                href="#"
+              >
+                <i className="fas fa-phone-alt"></i>
+              </Button>
         </>
     )
 }

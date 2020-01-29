@@ -1,30 +1,32 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
-import { PROJECTS } from "../shared/projects";
-import Project from "../components/projectComponent";
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import Link from '@material-ui/core/Link';
 
-class ProjectList extends Component {
-  state = {
-    projects: PROJECTS
-  };
+class SoftwareList extends Component {
 
   render() {
+
     return (
       <Container>
         <div style={{marginLeft: '26px', marginTop: '12px'}}>
           <Typography variant="h2" component="h2" gutterBottom={true}>
             <Box fontWeight="fontWeightBold">
-              My Projects
+                Software
             </Box>
           </Typography>
           <Typography variant="body1" component="p">
-            {Object.keys(PROJECTS).length} of my best projects
+            {/* {Object.keys(PROJECTS).length} * of my most well known software */}
+          </Typography>
+          <Typography component="h3" variant="h5">
+            <Link href="https://my.matterport.com/show/?m=x254ChDEXQt" color='inherit'>
+                REI Virtual Campsite
+            </Link>
           </Typography>
         </div>
-        {this.state.projects ? (
+        {/* {this.state.projects ? (
           <div>
             <Grid container spacing={2} style={{ padding: 24 }}>
               {this.state.projects.map(currentProject => (
@@ -36,10 +38,10 @@ class ProjectList extends Component {
           </div>
         ) : (
           "No projects found"
-        )}
+        )} */}
       </Container>
     );
   }
 }
 
-export default ProjectList;
+export default SoftwareList;

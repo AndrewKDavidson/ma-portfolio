@@ -9,7 +9,10 @@ const styles = theme => ({
         borderColor: 'transparent',
         left: '25px',
         position: 'absolute',
-    }
+        "& span": {
+            backgroundColor: theme.palette.buttonText[theme.palette.type],
+        }
+    },
   });
 
 const GooeyMenu = ({classes}) => {

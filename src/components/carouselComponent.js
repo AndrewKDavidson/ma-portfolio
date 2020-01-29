@@ -8,7 +8,7 @@ import "../styles/carousel-styles.css";
 
 const useStyles = makeStyles(theme => ({
     sliderContainer: {
-        padding: '15px 100px',
+        padding: '15px 120px',
         [theme.breakpoints.only('xs')]: {
             padding: '15px 0',
         },
@@ -41,15 +41,15 @@ const useStyles = makeStyles(theme => ({
     },
     arrows: {
         display: "block", 
-        backgroundColor: theme.palette.buttonBackground[theme.palette.type],
-        color: theme.palette.buttonText[theme.palette.type],
+        backgroundColor: 'transparent',
+        color: '#5DADA8',
+        transition: '150ms color ease',
         borderRadius: '100%',
-        height: '100px',
-        width: '100px',
+        height: '80px',
+        width: '80px',
         zIndex: '10',
         '&:hover': {
-            backgroundColor: theme.palette.buttonBackground[theme.palette.type],
-            color: theme.palette.buttonText[theme.palette.type],
+            color: theme.palette.carouselArrow[theme.palette.type]
         },
         [theme.breakpoints.only('sm')]: {
             height: '80px',
@@ -105,8 +105,8 @@ const Carousel = props => {
         slidesToScroll: 1,
         focusOnSelect: false,
         adaptiveHeight: true,
-        nextArrow: <NextArrow classes={`${classes.arrows} ${classes.leftArrow}`} />,
-        prevArrow: <PrevArrow classes={`${classes.arrows} ${classes.rightArrow}`} />,
+        nextArrow: <NextArrow classes={`${classes.arrows} ${classes.leftArrow} `} />,
+        prevArrow: <PrevArrow classes={`${classes.arrows} ${classes.rightArrow} `} />,
     };
     return (
     <div>

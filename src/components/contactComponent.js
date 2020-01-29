@@ -1,15 +1,10 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
-import { PROJECTS } from "../shared/projects";
-import Project from "../components/projectComponent";
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 
-class ProjectList extends Component {
-  state = {
-    projects: PROJECTS
-  };
+class Contact extends Component {
 
   render() {
     return (
@@ -17,14 +12,14 @@ class ProjectList extends Component {
         <div style={{marginLeft: '26px', marginTop: '12px'}}>
           <Typography variant="h2" component="h2" gutterBottom={true}>
             <Box fontWeight="fontWeightBold">
-              My Projects
+              Contact me
             </Box>
           </Typography>
-          <Typography variant="body1" component="p">
-            {Object.keys(PROJECTS).length} of my best projects
-          </Typography>
+          {/* <Typography variant="body1" component="p">
+          
+          </Typography> */}
         </div>
-        {this.state.projects ? (
+        {/* {this.state.projects ? (
           <div>
             <Grid container spacing={2} style={{ padding: 24 }}>
               {this.state.projects.map(currentProject => (
@@ -36,10 +31,10 @@ class ProjectList extends Component {
           </div>
         ) : (
           "No projects found"
-        )}
+        )} */}
       </Container>
     );
   }
 }
 
-export default ProjectList;
+export default Contact;
