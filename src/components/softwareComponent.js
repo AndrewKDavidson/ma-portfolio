@@ -21,8 +21,14 @@ class SoftwareList extends Component {
             {/* {Object.keys(PROJECTS).length} * of my most well known software */}
           </Typography>
           <Typography component="h3" variant="h5">
-            <Link href="https://my.matterport.com/show/?m=x254ChDEXQt" color='inherit'>
+            <Link href="https://my.matterport.com/show/?m=x254ChDEXQt" color='inherit' style={{paddingRight: '15px'}}>
                 REI Virtual Campsite
+            </Link>
+            <Link href="https://www.figma.com/proto/PInPdpOp0FAiR684GR0Knn/Portfolio?node-id=245%3A110&scaling=min-zoom" color='inherit' style={{padding: '0 15px'}}>
+                "PDF" of work at REI
+            </Link>
+            <Link href="https://www.behance.net/morganblair" color='inherit' style={{padding: '0 15px'}}>
+                My Bahance
             </Link>
           </Typography>
         </div>
