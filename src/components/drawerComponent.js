@@ -69,7 +69,9 @@ function AppDrawer({classes}) {
       <Drawer classes={{paper: classes.paper}} variant="permanent" anchor="left" open>
         <div className={ classes.drawerHeader }>
           <div className={classes.signatureContainer}>
-            <Signature />
+            <Link href="#info" onClick={preventDefault} color='inherit'>
+              <Signature />
+            </Link>
           </div>
         </div>
         <div className={ classes.drawerInner } >
@@ -77,15 +79,14 @@ function AppDrawer({classes}) {
             <Link href="#contact" onClick={preventDefault} color='inherit'>
               Contact Info
             </Link>
-            <Link href={Resume} target="_blank" color='inherit'>
-              Resume
-            </Link>
             <Link href="#projects" onClick={preventDefault} color='inherit'>
               My Work
             </Link>
           </Typography>
           <Typography className={classes.city}>
-            Seattle, WA
+            <Link href={Resume} target="_blank" color='inherit'>
+                Resume
+            </Link>
           </Typography>
         </div>
       </Drawer>
