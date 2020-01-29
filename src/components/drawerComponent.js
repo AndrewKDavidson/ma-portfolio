@@ -25,7 +25,7 @@ const styles = theme => ({
     paddingTop: '16px',
     display: 'flex',
     alignItems: 'flex-start',
-    flexDirection: 'column',
+    flexFlow: 'column nowrap',
     height: '100%'
 
   },
@@ -73,13 +73,13 @@ function AppDrawer({classes}) {
         </div>
         <div className={ classes.drawerInner } >
           <Typography className={classes.linkText}>
-            <Link href="#" onClick={preventDefault} color='inherit'>
+            <Link href="#contact" onClick={preventDefault} color='inherit'>
               Contact Info
             </Link>
-            <Link href="#" onClick={preventDefault} color='inherit'>
+            <Link href="" onClick={preventDefault} color='inherit'>
               Resume
             </Link>
-            <Link href="#" onClick={preventDefault} color='inherit'>
+            <Link href="#projects" onClick={preventDefault} color='inherit'>
               My Work
             </Link>
           </Typography>

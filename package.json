@@ -12,6 +12,7 @@
     "react-scripts": "3.2.0",
     "react-slick": "^0.25.2",
     "slick-carousel": "^1.8.1",
+    "smooth-scroll": "^16.1.2",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {

@@ -12,6 +12,7 @@ import { globalTheme } from "../styles/globalTheme.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ScrollComponent from './scrollIndicatorComponent';
 import RightMenu from './rightMenuComponent';
+import SmoothScroll from 'smooth-scroll'
 
 const useDarkMode = () => {
   const [theme, setTheme] = useState(globalTheme);
@@ -48,7 +49,11 @@ const Main = () => {
   //making typography fonts responsive (can modify sizes in theme if desired)
   muiTheme = responsiveFontSizes(muiTheme);
 
+  // initiate smooth-scroll
+  var scroll = new SmoothScroll('a[href*="#"]');
+
   return (
+    
     <>
       {/* pass theme to entire component */}
       <MuiThemeProvider theme={muiTheme}>

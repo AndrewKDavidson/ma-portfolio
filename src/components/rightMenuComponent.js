@@ -46,7 +46,7 @@ function RightMenu({onToggleDark, classes}) {
                 target="_blank"
                 variant="contained"
                 size="medium"
-                href="#"
+                href="#contact"
               >
                 <i className="fas fa-phone-alt"></i>
               </Button>

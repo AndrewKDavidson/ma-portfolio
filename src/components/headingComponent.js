@@ -40,7 +40,7 @@ const styles = theme => ({
 
 function Heading({classes}) {
     return(
-        <Box className={classes.boxBackground} borderBottom={1}>
+        <Box id="info" className={classes.boxBackground} borderBottom={1}>
             <Container>
                 <div className={classes.signatureContainer}>
                     <Signature />
