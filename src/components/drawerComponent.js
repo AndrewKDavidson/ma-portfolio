@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Signature from './signatureComponent.js'
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
+import Resume from '../Downloads/MBlair_resume.pdf';
 
 const styles = theme => ({
   paper: {
@@ -76,7 +77,7 @@ function AppDrawer({classes}) {
             <Link href="#contact" onClick={preventDefault} color='inherit'>
               Contact Info
             </Link>
-            <Link href="" onClick={preventDefault} color='inherit'>
+            <Link href={Resume} target="_blank" color='inherit'>
               Resume
             </Link>
             <Link href="#projects" onClick={preventDefault} color='inherit'>
