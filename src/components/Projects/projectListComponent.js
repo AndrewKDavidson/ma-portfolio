@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Grid from "@material-ui/core/Grid";
-import { PROJECTS } from "../shared/projects";
-import Project from "../components/projectComponent";
+import { PROJECTS } from "../../shared/projects";
+import Project from "./projectComponent";
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';

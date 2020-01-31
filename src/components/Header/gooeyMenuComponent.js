@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import "../styles/gooey-menu.css";
+import "../../styles/gooey-menu.css";
 
 const styles = theme => ({
     menuButton: {

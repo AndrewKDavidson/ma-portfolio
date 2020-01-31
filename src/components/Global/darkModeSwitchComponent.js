@@ -5,20 +5,22 @@ import Switch from '@material-ui/core/Switch';
 const DarkSwitch = withStyles(theme => ({
   root: {
     width: 24,
-    height: 74,
+    height: 78,
     padding: 0,
     display: 'flex',
     overflow: 'visible'
   },
   switchBase: {
+    top: '2px',
+    left: '2px',
     padding: 0,
     color: theme.palette.buttonBackground[theme.palette.type],
     backgroundPosition: 'center',
     '&$checked': {
-      transform: 'translateY(32px)',
+      transform: 'translateY(36px)',
       color: theme.palette.buttonBackground[theme.palette.type],
       '&$checked $thumb': {
-        backgroundImage: "url(/images/dark-switch-icon.svg)",
+        backgroundImage: "url(/images/light-switch-icon.svg)",
       },
       '& + $track': {
         opacity: 1,
@@ -33,10 +35,10 @@ const DarkSwitch = withStyles(theme => ({
   },
   thumb: {
     borderRadius: '12px',
-    width: 24,
-    height: 42,
+    width: '20px',
+    height: '38px',
     boxShadow: 'none',
-    backgroundImage: "url(/images/light-switch-icon.svg)",
+    backgroundImage: "url(/images/dark-switch-icon.svg)",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
   },
@@ -46,7 +48,9 @@ const DarkSwitch = withStyles(theme => ({
     backgroundImage: "url(/images/light-mode-switch.svg)",
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
+    backgroundColor: 'transparent',
+
   },
   checked: {},
 }))(Switch);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import DarkModeSwitch from './darkModeSwitchComponent';
+import DarkModeSwitch from '../Global/darkModeSwitchComponent';
 import Box from '@material-ui/core/Box';
 import Button from "@material-ui/core/Button";
 

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import Hidden from "@material-ui/core/Hidden";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../styles/carousel-styles.css";
+import "../../styles/carousel-styles.css";
 
 const useStyles = makeStyles(theme => ({
     sliderContainer: {
@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
             [theme.breakpoints.only('sm')]: {
                 fontSize: '40px'
             },
+        "& li button:before": {
+            color: '#5DADA8',
+        }
         },
         "& .fa-chevron-right": {
             left: '53%',

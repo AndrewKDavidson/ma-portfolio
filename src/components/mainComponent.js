@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import { MuiThemeProvider } from "@material-ui/core";
-import GooeyMenu from "./gooeyMenuComponent";
-import AppDrawer from "./drawerComponent";
 import Hidden from "@material-ui/core/Hidden";
-import Heading from './headingComponent';
-import ProjectList from "./projectListComponent";
-import SoftwareList from "./softwareComponent";
-import Contact from "./contactComponent";
-import { globalTheme } from "../styles/globalTheme.js";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import ScrollComponent from './scrollIndicatorComponent';
-import RightMenu from './rightMenuComponent';
 import SmoothScroll from 'smooth-scroll'
+import GooeyMenu from "./Header/gooeyMenuComponent";
+import AppDrawer from "./Header/drawerComponent";
+import Heading from './Heading/headingComponent';
+import ProjectList from "./Projects/projectListComponent";
+import SoftwareList from "./Software/softwareComponent";
+import Contact from "./Contact/contactComponent";
+import { globalTheme } from "../styles/globalTheme.js";
+import ScrollComponent from './Header/scrollIndicatorComponent';
+import RightMenu from './Header/rightMenuComponent';
 
 const useDarkMode = () => {
   const [theme, setTheme] = useState(globalTheme);
