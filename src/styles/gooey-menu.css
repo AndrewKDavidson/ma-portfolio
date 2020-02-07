@@ -10,7 +10,7 @@
     width: 70px;
     height: 70px;
     text-align: center;
-    line-height: 70px;
+    line-height: 71px;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     transition: -webkit-transform ease-out 200ms, background ease 200ms;
@@ -73,7 +73,6 @@
     position: fixed;
     bottom: 90px;
     box-sizing: border-box;
-    font-size: 20px;
     text-align: left;
     width: 100%;
   }

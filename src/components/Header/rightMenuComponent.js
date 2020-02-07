@@ -16,7 +16,7 @@ const styles = theme => ({
         borderRadius: '100%',
         position: 'fixed',
         right: '25px',
-        bottom: '24px',
+        bottom: '20px',
         backgroundColor: theme.palette.buttonBackground[theme.palette.type],
         color: theme.palette.buttonText[theme.palette.type],
         "&:hover": {
@@ -24,7 +24,7 @@ const styles = theme => ({
         },
         "& i": {
             position: 'absolute',
-            fontSize: '30px',
+            fontSize: '28px',
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
@@ -48,7 +48,7 @@ function RightMenu({onToggleDark, classes}) {
                 size="medium"
                 href="#contact"
               >
-                <i className="fas fa-phone-alt"></i>
+                <i className="fas fa-envelope"></i>
               </Button>
         </>
     )

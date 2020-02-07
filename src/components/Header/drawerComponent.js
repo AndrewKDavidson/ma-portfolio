@@ -4,7 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Signature from '../Global/signatureComponent'
 import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
-import Resume from '../../Downloads/MBlair_resume.pdf';
+import { Resume } from '../Global/resumeComponent';
 
 const styles = theme => ({
   paper: {

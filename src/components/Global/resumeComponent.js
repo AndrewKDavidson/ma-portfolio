@@ -1,0 +1,1 @@
+export { default as Resume } from '../../Downloads/MBlair_resume.pdf'
