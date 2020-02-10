@@ -27,6 +27,10 @@ const useDarkMode = () => {
       ...theme,
       palette: {
         ...theme.palette,
+        // change text color based on type
+        text: {
+          primary: theme.palette.type == "dark" ? "#2E3045" : "#E2F1F1",
+        },
         // modify type to light or dark in updated theme
         type: type === "light" ? "dark" : "light",
         background: {

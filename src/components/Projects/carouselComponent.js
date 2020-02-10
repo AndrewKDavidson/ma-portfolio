@@ -30,10 +30,13 @@ const useStyles = makeStyles(theme => ({
             transform: 'translate(-50%, -50%)',
             [theme.breakpoints.only('sm')]: {
                 fontSize: '40px'
-            },
+            }
+        },
         "& li button:before": {
-            color: '#5DADA8',
-        }
+            color: theme.palette.carouselArrow[theme.palette.type]
+        },
+        "& li.slick-active button:before": {
+            color: theme.palette.carouselArrow[theme.palette.type]
         },
         "& .fa-chevron-right": {
             left: '53%',

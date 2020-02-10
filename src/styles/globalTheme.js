@@ -6,19 +6,22 @@ export const globalTheme = {
     },
     palette: {
       type: "dark",
+      //set default dark mode text color
+      text: {
+        primary: "#E2F1F1"
+      },
       //backgrounds
       primary: {
         light: "#1A2429",
-        main: "#ff4400",
-        dark: "#FFFFFF"
-        // contrastText: will be calculated to contrast with palette.primary.main
+        main: "#C00",
+        dark: "#FFFFFF",
       },
       //text/accents
       secondary: {
         light: "#2E3045",
-        main: "#0044ff",
+        main: "#C00",
         dark: "#5DADA8",
-        // contrastText: "#ffcc00"
+        contrastText: '#2196f3'
       },
       //buttons and misc
       tertiary: {
@@ -54,10 +57,6 @@ export const globalTheme = {
       heading: {
         light: "#E2F1F1",
         dark: "#26343B"
-      },
-      headingContent: {
-        light: "#2E3045",
-        dark: "#E2F1F1"
       },
       scrollBar: {
         light: "#2E3045",

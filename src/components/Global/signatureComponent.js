@@ -6,11 +6,11 @@ const styles = makeStyles(theme => ({
         width: '100%',
         height: '100%',
         "& svg": {
-            fill: theme.palette.headingContent[theme.palette.type],
+            fill: theme.palette.text.primary,
             height: 'auto',
             width: '100%',
             "& path": {
-                fill: theme.palette.headingContent[theme.palette.type],
+                fill: theme.palette.text.primary,
                 transition: 'fill 1s ease',
             }
         }

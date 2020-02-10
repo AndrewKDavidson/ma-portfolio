@@ -8,10 +8,9 @@ import { Resume } from '../Global/resumeComponent';
 
 const styles = theme => ({
   paper: {
-    borderColor: theme.palette.mainBorder[theme.palette.type],
-    borderRight: '1px solid',
+    borderRight: `1px solid ${theme.palette.mainBorder[theme.palette.type]}`,
     backgroundColor: theme.palette.drawer[theme.palette.type],
-    color: theme.palette.primary[theme.palette.type],
+    color: theme.palette.text.primary,
     width: '80px'
   },
   flex: {
@@ -33,15 +32,14 @@ const styles = theme => ({
   signatureContainer: {
     width:'100%',
     padding: '25px 0',
-    borderColor: theme.palette.mainBorder[theme.palette.type],
-    borderBottom: '1px solid',
+    borderBottom: `1px solid ${theme.palette.mainBorder[theme.palette.type]}`,
     zIndex:'10',
     "& svg" : {
       paddingLeft: '8px'
     }
   },
   linkText: {
-    color: theme.palette.primary[theme.palette.type],
+    color: theme.palette.text.primary,
     writingMode: 'vertical-lr',
     margin: '0 auto',
     transform: 'rotate(180deg)',
@@ -53,8 +51,7 @@ const styles = theme => ({
   city: {
     margin: 'auto auto 0 auto',
     padding: '26px 0',
-    borderColor: theme.palette.mainBorder[theme.palette.type],
-    borderBottom: '1px solid',
+    borderBottom: `1px solid ${theme.palette.mainBorder[theme.palette.type]}`,
     writingMode: 'vertical-lr',
     transform: 'rotate(180deg)',
   }

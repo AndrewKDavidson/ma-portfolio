@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     backgroundColor: theme.palette.heading[theme.palette.type],
-    color: theme.palette.headingContent[theme.palette.type],
+    color: theme.palette.text.primary,
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),

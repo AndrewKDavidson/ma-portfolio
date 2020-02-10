@@ -11,7 +11,7 @@ const styles = theme => ({
     boxBackground: {
         textAlign: 'center',
         backgroundColor: theme.palette.heading[theme.palette.type],
-        color: theme.palette.headingContent[theme.palette.type],
+        color: theme.palette.text.primary,
         borderColor: theme.palette.mainBorder[theme.palette.type],
         overflow: 'hidden',
         paddingTop: '30px'
@@ -30,9 +30,9 @@ const styles = theme => ({
     },
     companyFill:{
         "& svg": {
-            fill: theme.palette.headingContent[theme.palette.type],
+            fill: theme.palette.text.primary,
             "& path": {
-                fill: theme.palette.headingContent[theme.palette.type],
+                fill: theme.palette.text.primary,
             }
         },
     }
